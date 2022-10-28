@@ -26,10 +26,9 @@ window.onload = function() {
         console.log(res.status)
         if(res.status === 200){
             console.log('nube')
-            const s = localStorage
-            s.setItem('login',true);
-            
         }
+        const s = localStorage
+        s.setItem('login',true);
         location.href= "/didactic-octo-telegram"
       })
    },1000)
