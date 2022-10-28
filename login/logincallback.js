@@ -19,15 +19,18 @@ window.onload = function() {
       fetch(`https://rokupass.ryofuruhashi823.repl.co/token?t=${query[1]}`,{
         method: "GET",
         mode: 'no-cors',
-      })
+        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'same-origin', // include, *same-origin, omit
+    })
       .then((res) => {
+        console.log(res.status)
         if(res.status === 200){
             console.log('nube')
             const s = localStorage
             s.setItem('login',true);
-        } else {
-            debug.innerText = "ログインに失敗したようです。"
+            
         }
+        location.href= "/"
       })
    },5000)
 }
