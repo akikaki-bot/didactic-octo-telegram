@@ -12,13 +12,17 @@
         <section class="section">
             <div class="container">
               <div class="box">
+                <form method="post" action="https://rokupass.ryofuruhashi823.repl.co/login">
                     <div class="field">
                         <p class="control has-icons-left">
+                            <label class="label" id="label"><i class="fas fa-lock"></i>  ここはどこ？ - ログインをすると外部サイトにリダイレクトし、二段階の確認が入ります。</label>
+                           <input class="input" type="text" name="location" id="location" readonly>
                            <label class="label" id="label"><i class="fas fa-lock"></i>  ログインパスワード</label>
-                           <input class="input" id="pass" type="password" placeholder="パスワード">
+                           <input class="input" name="pass" id="pass" type="password" placeholder="パスワード">
                         </p>
                     </div>
-                    <button class="button is-primary is-light" onclick="login()"> ログイン </button>
+                    <button class="button is-primary is-light"> ログイン </button>
+                </form>
               </div>
             </div>
         </section>  
