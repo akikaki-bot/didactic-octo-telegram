@@ -30,7 +30,7 @@ window.onload = function() {
             s.setItem('login',true);
             
         }
-        location.href= "/didactic-octo-telegram"
+        location.href= "https://akikaki-bot.github.io/didactic-octo-telegram/"
       })
    },1000)
 }
