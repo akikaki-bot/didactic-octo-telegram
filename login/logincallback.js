@@ -30,7 +30,7 @@ window.onload = function() {
             s.setItem('login',true);
             
         }
-        location.href= "/"
+        location.href= "/didactic-octo-telegram/"
       })
    },5000)
 }
