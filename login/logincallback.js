@@ -27,9 +27,10 @@ window.onload = function() {
         if(res.status === 200){
             console.log('nube')
         }
+
         const s = localStorage
         s.setItem('login',true);
-        location.href= "/didactic-octo-telegram"
+        location.href= "https://akikaki-bot.github.io/didactic-octo-telegram/"
       })
    },1000)
 }
